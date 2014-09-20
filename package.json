@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Modified version of este-library version 7.0.3",
   "author": "Daniel Steigerwald <daniel@steigerwald.cz>",
-  "private": true,
+  "private": false,
   "keywords": [
     "Este",
     "CoffeeScript",

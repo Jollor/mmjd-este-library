@@ -1,7 +1,6 @@
 {
-  "name": "este-library",
-  "version": "7.0.3",
-  "private": true,
+  "name": "mmjd-este-library",
+  "version": "1.0.1",
   "dependencies": {
     "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip",
     "closure-library": "https://github.com/google/closure-library.git",
@@ -9,5 +8,18 @@
     "pointerevents-polyfill": "^0.2.0",
     "react": "^0.11.0",
     "react-externs": "https://github.com/steida/react-externs.git"
-  }
+  },
+  "homepage": "https://github.com/mmjd/mmjd-este-library",
+  "authors": [
+    "msignup1@gmail.com"
+  ],
+  "description": "modified version of este-library",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
