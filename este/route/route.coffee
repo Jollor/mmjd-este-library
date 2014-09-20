@@ -6,6 +6,10 @@ goog.provide 'este.Route'
 
 goog.require 'goog.asserts'
 
+goog.require 'goog.Uri'
+
+goog.require 'defines'
+
 class este.Route
 
   ###*
@@ -95,7 +99,14 @@ class este.Route
         path = path.replace regex, value
       path.replace /\:[^\/]*/g, ''
 
-    @ensureUrlHasNoTrailingSlashOrDot_ url
+    hashbang = ''
+    console.log('is client rendered?')
+    console.log((!!!defines.SERVER_RENDERED))
+    if (!!!defines.SERVER_RENDERED)
+      hashbang = '#'
+    result = defines.CONTEXT + hashbang + @ensureUrlHasNoTrailingSlashOrDot_ url
+    console.log 'created url is ' + result
+    return result
 
   ###*
     @param {(Object|Array)=} params
@@ -118,6 +129,15 @@ class este.Route
     @private
   ###
   getMatches_: (url) ->
+    console.log('finding match for url ' + url + ' forceHash is ' + !defines.SERVER_RENDERED);
+    if (goog.string.contains(url, '#'))
+      uri = new goog.Uri(url)
+      url = uri.getFragment()
+      console.log('getting fragment from url ' + url)
+    else
+      url = goog.string.remove(url, defines.CONTEXT)
+      console.log('getting fragment from url ' + url)
+
     index = url.indexOf '?'
     pathname = if index > -1 then url.slice(0, index) else url
     @regexp.exec pathname

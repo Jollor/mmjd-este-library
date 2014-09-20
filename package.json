@@ -1,7 +1,7 @@
 {
-  "name": "este-library",
-  "version": "7.0.3",
-  "description": "Library for github.com/steida/este.git",
+  "name": "mmjd-este-library",
+  "version": "1.0.1",
+  "description": "Modified version of este-library version 7.0.3",
   "author": "Daniel Steigerwald <daniel@steigerwald.cz>",
   "private": true,
   "keywords": [

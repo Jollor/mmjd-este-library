@@ -114,6 +114,10 @@ class este.Router extends goog.events.EventTarget
     matchedRoute = @findMatchedRoute path
     goog.asserts.assert !!matchedRoute, "Route for path '#{path}' not found."
 
+    if (!goog.isDefAndNotNull(matched))
+          console.log('este router.js: ' + 'Route for path ' + path + ' not found.')
+          return null
+
     if @previousRoutePromise_
       @previousRoutePromise_.cancel()
 
