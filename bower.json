@@ -1,6 +1,6 @@
 {
   "name": "mmjd-este-library",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
     "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip",
     "closure-library": "https://github.com/google/closure-library.git",
