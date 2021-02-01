@@ -3,7 +3,7 @@
   "version": "7.0.3",
   "private": true,
   "dependencies": {
-    "closure-compiler": "https://dl.google.com/closure-compiler/compiler-20200224.zip",
+    "closure-compiler": "https://dl.google.com/closure-compiler/compiler-20180716.zip",
     "closure-library": "https://github.com/google/closure-library.git",
     "normalize-css": "^3.0.1",
     "pointerevents-polyfill": "^0.2.0",
