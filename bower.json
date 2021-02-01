@@ -2,7 +2,7 @@
   "name": "mmjd-este-library",
   "version": "1.0.2",
   "dependencies": {
-    "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip",
+    "closure-compiler": "https://dl.google.com/closure-compiler/compiler-20200719.zip",
     "closure-library": "https://github.com/google/closure-library.git",
     "normalize-css": "^3.0.1",
     "pointerevents-polyfill": "^0.2.0",
